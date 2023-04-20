@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - C language is so cool
- * return : 0
+ * return : Our return here is 0
 */
 int main(void)
 {
