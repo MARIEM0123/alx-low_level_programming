@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * int main (void) C language is so cool
+ * main - C language is so cool
+ * return : 0
 */
 int main(void)
 {
