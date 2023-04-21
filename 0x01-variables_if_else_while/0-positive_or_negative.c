@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
- 
 /**
  * main - C language is so cool
  * Return: Our return here is 0
