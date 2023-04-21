@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+ 
+/**
+ * main - C language is so cool
+ * Return: Our return here is 0
+ */
 
-/* betty style doc for function main goes there */
 int main(void)
 {
 	int n;
@@ -24,7 +27,7 @@ int main(void)
         else
         {
         printf("%d is negative", n);
-        }
-   
+        }  
     }
+return (0);
 }
