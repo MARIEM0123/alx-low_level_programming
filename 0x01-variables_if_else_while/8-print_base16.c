@@ -7,15 +7,14 @@
 int main(void)
 {
 	int a;
-	while (a <= 10)
+	while (a < 10)
 	{
 	putchar(a+48);
 	a++;
 	}
-	while (a <= 6)
+	for (a=0; a < 6; a++)
 	{
 	putchar(a+97);
-	a++;
 	}
 	putchar('\n');
 	return (0);
