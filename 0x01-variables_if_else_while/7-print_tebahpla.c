@@ -6,13 +6,13 @@
  */
 int main(void)
 {
-        char ch = 'z';
+	char ch = 'z';
         
-        while (ch >= 'a')
-        {
-        putchar(ch);
-        ch--;
-        }
-        putchar('\n');
-        return (0);
+	while (ch >= 'a')
+	{
+	putchar(ch);
+	ch--;
+	}
+	putchar('\n');
+	return (0);
 }
