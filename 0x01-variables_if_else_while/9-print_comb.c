@@ -7,14 +7,15 @@
 int main(void)
 {
 	int a = 0;
-
-	while (a < 9)
+	int i=0;
+	while (a < 10)
 	{
 	putchar(a + 48);
+	a++;
+	if (i < 9)
 	putchar(',');
 	putchar(' ');
-	a++;
+	i++;
 	}
-	putchar(57);
 	return (0);
 }
