@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* main C language is so cool
+/**
+ * main C language is so cool
  * Return: The resturn here is 0
  */
 int main(void)
@@ -14,14 +15,14 @@ int main(void)
 	b=1;
 	while (b < 10)
 	{
-	if ( b<=a)
+	if ( b <= a)
 	{
  	b++;
 	}
 	else{
-	putchar (a+48);
-	putchar(b+48);
-	if (a+48==56 && b+48==57)
+	putchar (a + 48);
+	putchar(b + 48);
+	if (a + 48 == 56 && b + 48 == 57)
 	break;
 	else
 	{
