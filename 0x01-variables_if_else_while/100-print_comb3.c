@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main C is so cool
+ * main C - is so cool
  * Return: The return here is 0
  */
 int main(void)
