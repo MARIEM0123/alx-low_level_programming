@@ -15,27 +15,21 @@ int main(void)
 	while (b < 10)
 	{
 	if (a >= b)
-	{
 	b++;
-	}
 	else
 	{
 	c = 2;
 	while (c < 10)
 	{
 	if (c <= b)
-	{
 	c++;
-	}
 	else
 	{
 	putchar(a + 48);
 	putchar(b + 48);
 	putchar(c + 48);
 	if (a + 48 == 55 && b + 48 == 56 && c + 48 == 57)
-	{
 	break;
-	}
 	else
 	{
 	putchar(',');
