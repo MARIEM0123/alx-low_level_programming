@@ -12,20 +12,22 @@ int main(void)
         while (a < 10)
         {
         b = 0;
-        while (b < 10)
+        while (b < 9)
         {
-if (b==9)c= a+1;
+if (b==9)c= a;
 else c=a;
 
         while (c < 10)
         {
 if (b==9)     d=0;
-    else d=b+1;
+    else d=b;
         while(d < 10)
             {
-        if (a==0 && b==a && c==a && d==a)
-            d++;
-        else{
+
+
+
+            if (a==c && b==d) d++;
+            else {
         putchar(a + 48);
         putchar(b + 48);
         putchar(' ');
@@ -37,11 +39,11 @@ if (b==9)     d=0;
         {
         putchar(',');
         putchar(' ');
+        }d++;
         }
+
         }
-d++;
-        }
-c++;
+            c++;
         }
 
         b++;
