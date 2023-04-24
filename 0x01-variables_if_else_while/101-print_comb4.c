@@ -8,9 +8,10 @@ int main(void)
 {
 	int a, b, c;
 
-	a = 0, b = 1, c = 2;
+	a = 0;
 	while (a < 10)
 	{
+	b = 1;
 	while (b < 10)
 	{
 	if (a >= b)
@@ -19,6 +20,7 @@ int main(void)
 	}
 	else
 	{
+	c = 2;
 	while (c < 10)
 	{
 	if (c <= b)
