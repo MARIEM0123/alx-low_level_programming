@@ -14,7 +14,7 @@ int main(void)
 	b = 1;
 	while (b < 10)
 	{
-	if (a>=b)
+	if (a >= b)
 	{
 	b++;
 	}
@@ -23,7 +23,7 @@ int main(void)
 	c=2;
 	while (c < 10)
 	{
-	if (c <=b){
+	if (c <= b){
 	c++;
 	}
 	else
