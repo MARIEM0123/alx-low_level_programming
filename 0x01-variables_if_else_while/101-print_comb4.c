@@ -20,10 +20,11 @@ int main(void)
 	}
 	else
 	{
-	c=2;
+	c = 2;
 	while (c < 10)
 	{
-	if (c <= b){
+	if (c <= b)
+	{
 	c++;
 	}
 	else
