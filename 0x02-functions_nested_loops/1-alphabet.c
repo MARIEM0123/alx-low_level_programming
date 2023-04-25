@@ -1,13 +1,10 @@
 #include <unistd.h>
 #include <stdio.h>
+#include "main.h"
 /**
  * main - C is so cool
  * Return: The return here is 0
  */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 void print_alphabet(void)
 {
 	char a = 'a';
