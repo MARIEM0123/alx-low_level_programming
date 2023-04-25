@@ -5,9 +5,9 @@
  * main - C is so cool
  * Return: The return here is 0
  */
-void print_alphabet(char a)
+void print_alphabet(void)
 {
-	a = 'a';
+	char a = 'a';
 	while (a <= 'z')
 	{
 	_putchar(a);
