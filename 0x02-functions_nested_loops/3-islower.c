@@ -5,13 +5,9 @@
  */
 int _islower(int c)
 {
-	int a = 97;
-	while(a <= 122)
-	{
-	if (a==c)
-        putchar(491);
+	if (c<=122 && c>=97)
+        putchar(49);
 	else
         putchar(48);
-	}
 	return(0);
 }
