@@ -1,8 +1,14 @@
 #include<stdio.h>
-
+#include "main.h"
+/**
+ * print_sign - C is so cool
+ * @n: to verify the sign
+ * Return: The return here is 0
+ */
 int print_last_digit(int n)
 {
 int l, m;
+
 l = n % 10;
 if (n >= 0)
 {
