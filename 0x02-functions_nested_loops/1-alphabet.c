@@ -7,13 +7,13 @@
 {
 	char a;
 	
-	a='a';
+	a = 'a';
 	while (a <= 'z')
   	{
 	putchar(a);
 	a++;
 	}
- }
+}
 int main(void)
 {
 	print_alphabet();
