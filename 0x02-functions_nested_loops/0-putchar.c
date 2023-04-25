@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - C is so cool
  * Return: The return here is 0
