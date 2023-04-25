@@ -1,8 +1,5 @@
 #include <unistd.h>
 
-int _putchar()
-{
-}
 
 int _putchar(char c)
 {
