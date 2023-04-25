@@ -14,7 +14,6 @@ void print_alphabet(void)
 	a++;
 	}
 	putchar('\n');
-	return(0);
 }
 int main(void)
 {
