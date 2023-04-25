@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * _isalpha - C is so cool
- * @c: to check if an alphabet 
+ * @c: to check if an alphabet
  * Return: The return here is 0
  */
 int _isalpha(int c)
