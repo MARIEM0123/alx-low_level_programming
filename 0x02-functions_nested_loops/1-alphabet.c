@@ -3,11 +3,13 @@
  * main - C is so cool
  * Return: The return here is 0
  */
- void print_alphabet(char a)
+ void print_alphabet(void)
 {
+	char a;
+
 	a = 'a';
 	while (a <= 'z')
-  	{
+	{
 	putchar(a);
 	a++;
 	}
@@ -15,7 +17,7 @@
 }
 int main(void)
 {
-	print_alphabet();i
+	print_alphabet();
 	return (0);
 }
 
