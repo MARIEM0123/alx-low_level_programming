@@ -9,5 +9,4 @@ int _islower(int c)
         putchar(49);
 	else
         putchar(48);
-	return(0);
 }
