@@ -7,7 +7,7 @@
  * Return: The return here is 0
  */
 int print_sign(int n)
-{	
+{
 	if (n > 0)
 	{
 	_putchar (43);
