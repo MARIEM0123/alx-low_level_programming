@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * _abs - C is so cool
+ * add - C is so cool
+ * @a: to give the absolute value
  * @a: to give the absolute value
  * Return: The return here is 0
  */
