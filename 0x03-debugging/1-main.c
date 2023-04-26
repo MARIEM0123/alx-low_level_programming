@@ -2,6 +2,7 @@
 
 /**
 * main - causes an infinite loop
+* @i: the character for loop function
 * Return: 0
 */
 
