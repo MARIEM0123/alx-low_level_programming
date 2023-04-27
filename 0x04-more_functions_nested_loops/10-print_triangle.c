@@ -1,29 +1,27 @@
 #include "main.h"
-
 /**
- * print_triangle - The square of values
- * @size: the parameter to be considered
+ * print_triangle - get a triangle
+ * @size: size of the triangle
  */
-
 void print_triangle(int size)
 {
-	int a, b, c;
-
 	if (size <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		for (a = 0; a < size; a++)
+		int i, j;
+
+		for (i = 1; i <= size; i++)
 		{
-			for (b = size - a; b > 1; b--)
+			for (j = i; j < size; j++)
 			{
-				_putchar(32);
+				_putchar(' ');
 			}
-			for (c = 0; c <= a; c++)
+			for (j = 1; j <= i; j++)
 			{
-			_putchar(35);
+				_putchar('#');
 			}
 			_putchar('\n');
 		}
