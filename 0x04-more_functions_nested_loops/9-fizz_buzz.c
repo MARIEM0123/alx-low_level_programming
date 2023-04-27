@@ -3,6 +3,7 @@
 
 /**
  * main - C is so cool
+ * @a: the parameter to consider
  * Return: 0
  */
 
