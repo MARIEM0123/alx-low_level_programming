@@ -10,6 +10,10 @@ void print_diagonal(int n)
 {
 	int i, j;
 
+	if (n <= 0)
+		_putchar ('\n')
+	else
+	{
 	j = 0;
 	for (j = 0; j < n; j++)
 {
@@ -18,6 +22,7 @@ void print_diagonal(int n)
 	_putchar (' ');
 	for (i = 0; i < j ; i++)
 		_putchar (' ');
+}
 }
 _putchar ('\n');
 }
