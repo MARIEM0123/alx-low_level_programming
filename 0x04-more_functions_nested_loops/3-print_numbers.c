@@ -2,7 +2,6 @@
 #include<stdio.h>
 /**
  * print_numbers - C is so cool
- * @i: the number to consider
  * Return: The return here is 0
  */
 
