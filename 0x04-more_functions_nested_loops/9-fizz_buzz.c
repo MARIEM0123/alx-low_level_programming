@@ -1,36 +1,34 @@
-#include "main.h"
+include "main.h"
 #include <stdio.h>
+
 /**
- * main - C is so cool
- * Return: the return is 0
+ * main - git the numbers from 1 to 100,or Fizz or Buzz
+ * Return: Returning 0
  */
 int main(void)
 {
-	int a;
+	int i;
 
-	for (a = 1; a <= 100; a++)
+	for (i = 1; i <= 100; i++)
 	{
-	if (a % 3 == 0)
-	{
-	printf("Fizz");
-	}
-	else if (a % 5 == 0)
-	{
-	printf("Buzz");
-	}
-	else if ((a % 3 == 0) && (a % 5 == 0))
-	{
-	printf("FizzBuzz");
-	}
-	else
-	{
-	printf("%d", a);
-	}
-	if (a != 100)
-	{
-	printf(" ");
-	}
+		if (i % 3 == 0 && i % 5 != 0)
+		{
+			printf(" Fizz");
+		} else if (i % 5 == 0 && i % 3 != 0)
+		{
+			printf(" Buzz");
+		} else if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf(" FizzBuzz");
+		} else if (i == 1)
+		{
+			printf("%d", i);
+		} else
+		{
+			printf(" %d", i);
+		}
 	}
 	printf("\n");
+
 	return (0);
 }
