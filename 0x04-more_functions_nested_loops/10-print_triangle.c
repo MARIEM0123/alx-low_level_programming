@@ -3,7 +3,6 @@
 /**
  * print_triangle - The square of values
  * @size: the parameter to be considered
- * Return: there is no return
  */
 
 void print_triangle(int size)
