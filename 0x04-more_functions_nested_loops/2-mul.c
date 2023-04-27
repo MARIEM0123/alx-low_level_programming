@@ -5,7 +5,7 @@
  * @a: the number to consider
  * Return: The return here is 0
  */
-int int mul(int a, int b)
+int mul(int a, int b)
 {
 	return (a * b);
 }
