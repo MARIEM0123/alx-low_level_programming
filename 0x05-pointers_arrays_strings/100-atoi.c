@@ -24,18 +24,16 @@ int _atoi(char *s)
 		++b;
 		if (s[a] >= '0' && s[a] <= '9')
 		{
-			g = s[a] - '0';
-			if (d % 2)
-				g = -g;
+			g = s[a] - '0';	
 			c = c * 10 + g;
 			f = 1;
-			if (s[a + 1] < '0' || s[a + 1] > '9')
+			if (s[a+1] < '0' || s[a+1] > '9')
 				break;
 			f = 0;
 		}
 		a++;
 	}
-	if (f == 0)
+	if (f==0)
 		return (0);
 	return (c);
 }
