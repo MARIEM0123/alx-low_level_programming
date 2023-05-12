@@ -1,14 +1,6 @@
 #include "main.h"
-#include<stdio.h>
-
-/**
- * main - Entry point
- * Return: Always 0 (Success)
- */
-int main(void)
+#include <stdio.h>
+void _puts(char *s)
 {
-	puts("\"the string");
-	return (0);
+	puts(s);
 }
-
-
