@@ -1,8 +1,14 @@
 #include "main.h"
-void _puts(char *s)
-{
-	puts("\"At the end of the day, my goal was to be the best hacker");
-	
+#include<stdio.h>
 
+/**
+ * main - Entry point
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	puts("\"the string");
+	return (0);
 }
+
 
