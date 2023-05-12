@@ -4,7 +4,7 @@
 
 /**
  * main - the function
- * @argc: parameter 
+ * @argc: parameter
  * @argv: parameter
  * Return: 0 or 1
  */

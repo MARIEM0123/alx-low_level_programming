@@ -3,7 +3,7 @@
 
 /**
  * main - prints the name
- * @argc: first parameter 
+ * @argc: first parameter
  * @argv: second parameter
  * Return: 0
  */
