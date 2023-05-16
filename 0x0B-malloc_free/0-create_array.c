@@ -19,6 +19,6 @@ char *create_array(unsigned int size, char c)
 	return (s);
 	}
 	else
-		return (NULL)
+		return (NULL);
 }
 
