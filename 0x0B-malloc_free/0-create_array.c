@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <assert.h>
 /**
  * create_array - the function
  * @size: the parameter
