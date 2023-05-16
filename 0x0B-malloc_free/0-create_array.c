@@ -1,8 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
-#include <assert.h>
 /**
- * create_array - the function
+ * create_array - the funcion 
  * @size: the parameter
  * @c: the parameter
  * Return: value or NULL
@@ -15,12 +14,8 @@ char *create_array(unsigned int size, char c)
 	s = malloc(sizeof(char) * size);
 	for (i = 0; i < size; i++)
 		s[i] = c;
-	if (size != 0)
-	{
-		return (s);
-	}
-	else
-		return (NULL);
-	if (s == NULL)
-		return (NULL);
+	return (s);
+	if (size == 0 || s == NULL)
+                return (NULL);
 }
+
