@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
- * print_list - give the elements of the linked list
- * @h: pointer paeameter
+ * print_list - give the elements
+ * @h: pointer parameter
  * Return: != 0
  */
 size_t print_list(const list_t *h)
 {
-	size_t a = 0;
+	size_t a = 0;	
 
 	while (h)
 	{
