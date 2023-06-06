@@ -3,7 +3,7 @@
 /**
  * sum_listint - function
  * @head: pointer
- * Return: != 0 
+ * Return: != 0
  */
 int sum_listint(listint_t *head)
 {
