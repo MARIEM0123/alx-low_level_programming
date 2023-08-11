@@ -41,6 +41,8 @@ void cl_fl(int file)
 	}
 }
 
+char *cr_buf(char *f);
+void cl_file(int fd);
 /**
  * main - The function to copy
  * @argc: The number of arguments
