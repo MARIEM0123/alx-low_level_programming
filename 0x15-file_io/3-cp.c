@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char *cr_buf(char *f);
-void cl_file(int fd);
+char *cr_buffer(char *f);
+void cl_fl(int fd);
 
 /**
  * cr_buffer - Allocatation memory
@@ -41,8 +41,6 @@ void cl_fl(int file)
 	}
 }
 
-char *cr_buf(char *f);
-void cl_file(int fd);
 /**
  * main - The function to copy
  * @argc: The number of arguments
