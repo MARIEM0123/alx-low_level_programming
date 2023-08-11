@@ -1,72 +1,90 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
+
+char *buffer_al(char *f);
+void close1(int fd);
 
 /**
- * Not_open - the function tests if the file can't open.
- * @f1 : file to copy from
- * @f2 : file to copy to
- * @argv: arguments
- * Return: there is no return
+ * buffer_al - the function to allocate memory
+ * @file: The name of the file
+ * Return: the buffer
  */
-void Not_open(int f1, int f2, char *argv[])
+char *buffer_al(char *file)
 {
-	if (f1 == -1)
+	char *s;
+
+	s = malloc(sizeof(char) * 1024);
+
+	if (!s)
 	{
-		dprintf(STDERR_FILENO, "Error: The file can't open %s\n", argv[1]);
-		exit(98);
+	dprintf(STDERR_FILENO, "Error: we can't write %s\n", file);
+	exit(99);
 	}
-	if (f2 == -1)
+	return (s);
+}
+
+/**
+ * close1 - Closes file descriptors
+ * @file: The file descriptor
+ */
+void close1(int file)
+{
+	int s;
+
+	s = close(file);
+
+	if (s == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: The file can't be created %s\n", argv[2]);
-		exit(99);
+	dprintf(STDERR_FILENO, "Error: the file can't close %d\n", file);
+	exit(100);
 	}
 }
 
 /**
- * main - to copy from a file to another
- * @argc: number of arguments
- * @argv: arguments vector
- * Return: return 0
+ * main - The function copy from file to another
+ * @argc: The number of arguments
+ * @argv: An array of pointers to the arguments
+ * Return: 0 if the file is copied
  */
 int main(int argc, char *argv[])
 {
-	int f1, f2, cl;
-	ssize_t i, nwr;
-	char buffer[1024];
+	int f1, f2, rd, wt;
+	char *s;
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
-		exit(97);
+	dprintf(STDERR_FILENO, "Usage: copy one file to another\n");
+	exit(97);
 	}
 
+	s = buffer_al(argv[2]);
 	f1 = open(argv[1], O_RDONLY);
-	f2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	Not_open(f1, f2, argv);
+	rd = read(f1, s, 1024);
+	f2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	i = 1024;
-	while (i == 1024)
+	while (rd > 0)
 	{
-		i = read(f1, buffer, 1024);
-		if (i == -1)
-			Not_open(-1, 0, argv);
-		nwr = write(f2, buffer, i);
-		if (nwr == -1)
-			Not_open(0, -1, argv);
+	if (f1 == -1 || rd == -1)
+	{
+	dprintf(STDERR_FILENO, "Error: Can't read the file %s\n", argv[1]);
+	free(s);
+	exit(98);
 	}
 
-	cl = close(f1);
-	if (cl == -1)
+	wt = write(f2, s, rd);
+	if (f2 == -1 || wt == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: The file won't close fd %d\n", f1);
-		exit(100);
+		dprintf(STDERR_FILENO, "Error: Can't write to the file %s\n", argv[2]);
+		free(s);
+		exit(99);
 	}
 
-	cl = close(f2);
-	if (cl == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: The file won't close %d\n", f1);
-		exit(100);
+	rd = read(f1, s, 1024);
 	}
+
+	free(s);
+	close1(f1);
+	close1(f2);
 	return (0);
 }
