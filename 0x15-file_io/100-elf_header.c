@@ -1,5 +1,9 @@
 #include "main.h"
-
+#include <elf.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
 /**
  * pr_er - the output is an error message to stderr.
  * @m: The message writen
