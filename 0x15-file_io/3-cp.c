@@ -15,7 +15,6 @@ char *buffer_al(char *file)
 	char *s;
 
 	s = malloc(sizeof(char) * 1024);
-
 	if (!s)
 	{
 	dprintf(STDERR_FILENO, "Error: we can't write %s\n", file);
@@ -33,7 +32,6 @@ void close1(int file)
 	int s;
 
 	s = close(file);
-
 	if (s == -1)
 	{
 	dprintf(STDERR_FILENO, "Error: the file can't close %d\n", file);
