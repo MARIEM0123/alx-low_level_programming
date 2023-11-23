@@ -2,8 +2,7 @@
 """5-island_perimeter module"""
 
 def island_perimeter(grid):
-    """Returns the perimeter of the island described in grid
-       grid is a list of list of integers"""
+    """Returns the perimeter of the island described in grid"""
     c = 0
     length = len(grid) - 1
     width = len(grid[0]) - 1
