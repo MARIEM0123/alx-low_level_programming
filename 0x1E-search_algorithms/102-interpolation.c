@@ -1,11 +1,11 @@
 #include "search_algos.h"
 
 /**
- * interpolation_search - The funct to find a value in a sorted array using \
- * @array: The first arg is the array to search in.
- * @size: The second arg is the length of the array.
- * @value: The third is the value to look for.
- * Return: The return is the first index of the value in the array or -1 
+ * interpolation_search - The funct to find a value in the array
+ * @array: The first arg is the array
+ * @size: The second arg is the length
+ * @value: The third is the value
+ * Return: The return is the first index or -1 
  */
 int interpolation_search(int *array, size_t size, int value)
 {
