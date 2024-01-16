@@ -1,10 +1,10 @@
 #include "search_algos.h"
 
 /**
- * print_array - Prints the contents of an array.
- * @array: The source of the array to print.
- * @l: The left index of the array.
- * @r: The right index of the array.
+ * print_array - The funct to display contents of an array.
+ * @array: The first arg is the source of the array to print.
+ * @l: The second arg is the left index of the array.
+ * @r: The third arg is the right index of the array.
  */
 void print_array(int *array, size_t l, size_t r)
 {
@@ -19,14 +19,12 @@ void print_array(int *array, size_t l, size_t r)
 }
 
 /**
- * binary_search_index - Searches a value in a sorted array using \
- * a binary search.
- * @array: The array to search in.
- * @l: The left index of the array.
- * @r: The right index of the array.
- * @value: The value to look for.
- *
- * Return: The first index of the value in the array, otherwise -1.
+ * binary_search_index - The funct to find a value in a sorted array using \
+ * @array: The first arg is the array to search in.
+ * @l: The second arg is the left index of the array.
+ * @r: The third arg is the right index of the array.
+ * @value: The return is the value to look for.
+ * Return: The return is the first index of the value in the array or -1.
  */
 int binary_search_index(int *array, size_t l, size_t r, int value)
 {
@@ -57,12 +55,11 @@ int binary_search_index(int *array, size_t l, size_t r, int value)
 }
 
 /**
- * advanced_binary - Searches a value in a sorted array using a binary search.
- * @array: The array to search in.
- * @size: The length of the array.
- * @value: The value to look for.
- *
- * Return: The first index of the value in the array, otherwise -1.
+ * advanced_binary - The funct is the value in a sorted array using a binary search.
+ * @array: The first arg is the array to search in.
+ * @size: The second arg is the length of the array.
+ * @value: The third arg is the value to look for.
+ * Return: The return is the first index of the value in the array or -1.
  */
 int advanced_binary(int *array, size_t size, int value)
 {

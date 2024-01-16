@@ -2,12 +2,11 @@
 #include "search_algos.h"
 
 /**
- * get_n_next - Gets the nth node next to a given node.
- * @node: The starting node.
- * @n: The number of positions next to the node.
- *
- * Return: The node n places next to the given node, \
- * otherwise the last node or NULL.
+ * get_n_next - The funct to have the nth node next to a given node.
+ * @node: The first arg is the starting node.
+ * @n: The second arg is the number of positions next to the node.
+ * Return: The return node n places next to the given node, \
+ * or in another case the last node or NULL.
  */
 listint_t *get_n_next(listint_t *node, size_t n)
 {
@@ -21,12 +20,11 @@ listint_t *get_n_next(listint_t *node, size_t n)
 }
 
 /**
- * jump_list - Searches a value in a sorted linked list using a jump search.
- * @list: The linked list to search in.
- * @size: The length of the linked list.
- * @value: The value to look for.
- *
- * Return: The node with the value in the linked list, otherwise NULL.
+ * jump_list - The funct to find a value in a sorted linked list using a jump search.
+ * @list: The first arg is the linked list to search in.
+ * @size: The second arg is the length of the linked list.
+ * @value: The third arg is the value to look for.
+ * Return: The return is the  node with the value in the linked list or NULL.
  */
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
