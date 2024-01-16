@@ -5,7 +5,7 @@
  * @array: The first arg is the array
  * @size: The second arg is the length
  * @value: The third is the value
- * Return: The return is the first index or -1 
+ * Return: The return is the first index or -1
  */
 int interpolation_search(int *array, size_t size, int value)
 {
