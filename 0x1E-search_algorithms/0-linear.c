@@ -7,7 +7,6 @@
  * @value: The third arg The value
  * Return: The return is the index of value or -1 if not
  */
-
 int linear_search(int *array, size_t size, int value)
 {
 	size_t inc;
