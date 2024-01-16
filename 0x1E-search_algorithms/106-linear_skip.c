@@ -2,10 +2,10 @@
 #include "search_algos.h"
 
 /**
- * linear_skip - The funct is to find a value in a sorted linked list with an \
- * @list: The first arg is the linked list with an express lane to search in.
- * @value: The second arg is the value to look for.
- * Return: The return is the node with the value in the linked list or NULL.
+ * linear_skip - The funct is to find a value in a sorted linked list
+ * @list: The first arg is the linked list with an express lane
+ * @value: The second arg is the value
+ * Return: The return is the node or NULL.
  */
 skiplist_t *linear_skip(skiplist_t *list, int value)
 {
