@@ -1,11 +1,11 @@
 #include "search_algos.h"
 
 /**
- * linear_search - The funct to find a value in a sorted array of integers
- * @array: The first arg The array of integers
- * @size: The second arg The size of array
- * @value: The third arg The value to search for
- * Return: The return is the index of value in case of existed or -1 if not
+ * linear_search - The funct to find a value in a sorted array
+ * @array: The first arg The array
+ * @size: The second arg The size
+ * @value: The third arg The value
+ * Return: The return is the index of value or -1 if not
  */
 
 int linear_search(int *array, size_t size, int value)
